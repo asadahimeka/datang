@@ -1,0 +1,45 @@
+@import "global.less";
+
+.topbnr{
+    width: 100%;
+}
+
+@cnt-bor-color: #969695;
+
+.proj-list{
+    width: @navwidth;
+    margin: 0 auto 90px;
+    padding: 10px 0;
+    .proj-cnt{
+        margin-top: 55px;
+        .proj-img{
+            width: 200px;
+            margin-right: 50px;
+            float: left;
+            img{
+                width: 200px;
+            }
+        }
+        .proj-intro{
+            width: 950px;
+            padding-bottom: 60px;
+            float: left;
+            .border-bottom(@cnt-bor-color);    
+            .proj-tit{
+                font-size: 24px;
+                font-weight: 500;
+            }
+            .prj-intr-p{
+                font-size: 16px;
+                line-height: 36px;
+                color: #777774;
+                span{
+                    font-size: 18px;
+                    color: #000;
+                    font-weight: 400;
+                }
+                margin-top: 25px;
+            }
+        }
+    }
+}

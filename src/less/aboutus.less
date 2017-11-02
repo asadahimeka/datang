@@ -1,0 +1,108 @@
+@import "global.less";
+
+.cont{
+    width: 100%;
+    padding: 30px 80px;
+}
+.boss{
+    width: @navwidth;
+    margin: 0 auto;
+    .boss-intro{
+        margin-top: 40px;
+        .bossimg{
+            float: left;
+            margin-right: 70px;
+        }
+        .boss-name{
+            margin: 20px 0 40px;
+            font-size: 24px;
+            font-weight: 500;
+        }
+        .boss-intro-text{
+            color: #333;
+            font-size: 16px;
+            line-height: 40px;
+        }
+    }
+    .boss-kotoba{
+        dt{
+            margin: 20px 60px; 
+            color: red;
+            font-size: 22px;
+            font-weight: 500;
+        }
+        dd{
+            margin-left: 110px;
+            color: #666;
+            font-size: 22px;
+            font-family: "宋体";
+        }
+    }
+}
+
+.ustpc{
+    margin-bottom: 20px;
+    .topic-left{
+        width: 230px;
+    }
+    .topic-more{
+        width: @navwidth - 230px;
+    }
+}
+
+.us-img{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.partner{
+    width: 100%;
+    padding: 60px 80px;
+    background: #eee;
+}
+
+.swiper-button-prev{
+    position: relative;
+    top: -133px;
+    left: -60px;
+    width: 50px;
+    height: 60px;
+    float: left;
+    background-size: 50px 60px;
+    &:hover{
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23e70009'%2F%3E%3C%2Fsvg%3E");        
+    }
+}
+.swiper-button-next{
+    position: relative;
+    top: -133px;
+    left: 60px;
+    width: 50px;
+    height: 60px;
+    float: right;
+    background-size: 50px 60px;
+    &:hover{
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23e70009'%2F%3E%3C%2Fsvg%3E");
+    }
+}
+
+.contact-us{
+    padding: 30px 80px;
+
+    .addr{
+        float: left;     
+        margin-top: 40px;  
+        margin-left: 60px; 
+        font-size: 18px;
+        p{
+            margin-bottom: 40px;
+            color: #333;
+        }
+    }
+    .usmap{
+        float: right;        
+        width: 491px;
+        height: 443px;
+        margin: 40px 60px 70px;
+    }
+}

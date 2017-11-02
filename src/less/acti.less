@@ -1,0 +1,76 @@
+@import "global.less";
+
+.sel-acti{
+    width: 240px;
+    height: 30px;
+    margin-top: 60px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.seldiv{
+    width: @navwidth;
+    margin: 0 auto; 
+}
+
+.acti-container{
+    width: @navwidth;
+    margin: 0 auto; 
+    padding: 30px 0;
+}
+
+.actidiv{
+    float: left;
+    width: 380px;
+    height: 430px;
+    margin: 10px;
+    border-bottom: 2px solid #d6d6d6;
+    background: #eceaea;
+    transition: .3s ease-in;
+    &:hover{
+        transform: translateY(-3px);        
+        box-shadow: 3px 3px 10px #bbb;
+    }
+    .acti-cnt{
+        padding: 10px;
+        .acti-tit a{
+            font-family: "宋体";
+            font-size: 18px;
+            color: #000;
+            text-decoration: none;           
+        }
+        .acti-time{
+            margin-top: 20px;            
+        }
+        .acti-time,.acti-posi{
+            color: #666;
+            font-size: 13px;            
+        }
+    }
+    .acti-img{
+        position: relative;           
+        width: 360px;
+        height: 270px;
+        margin: 10px auto;
+        img{
+            width: 360px;
+            height: 270px;
+        }     
+        .acti-status{
+            width: 100px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            color: #e20404;
+            background: rgba(255,255,255,.8);
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+    }
+    &:hover .acti-tit a{
+        color: red;
+        text-decoration: underline;
+    } 
+}
+
+

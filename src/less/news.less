@@ -1,0 +1,60 @@
+@import "global.less";
+
+.newslist{
+    width: @navwidth;
+    margin: 40px auto;
+    .mouth-news{
+        width: @navwidth;
+        padding-bottom: 40px;
+        background: url(../images/travker/heng_line.jpg) repeat-y;
+        .mouth{
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+            margin-left: 98px;
+            background: @navhovercolor;            
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+        }
+        .news-div{
+            width: 1000px;
+            margin-top: 50px;
+            .news-date{
+                float: left;
+                width: 130px;
+                margin-left: 4px;
+                .reddot{
+                    float: right;
+                    width: 9px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+                    height: 9px;
+                    margin-top: 5px; 
+                    background: url('../images/travker/red.png') no-repeat;
+                }
+            }
+            .news-img{
+                float: left;
+                width: 160px;
+                height: 120px;
+                margin-left: 70px;
+                margin-right: 25px;
+            }
+            .news-tit a{
+                color: #000;
+                font-size: 18px;
+                font-weight: 600;
+                &:hover{
+                    color: red;
+                }
+            }
+            .news-intro{
+                color: #8f8f8d;
+                font-size: 14px;
+                overflow: hidden;
+                a{
+                    color: red;
+                }
+            }
+        }
+    }
+}

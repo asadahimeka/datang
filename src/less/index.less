@@ -1,0 +1,378 @@
+@import "global.less";
+
+@cnt-tit-width:175px;
+@cnt-tit-height:60px;
+.titleft{
+    width: @cnt-tit-width;
+    height: @cnt-tit-height;
+    line-height: @cnt-tit-height;
+    float: left;
+    text-align: center;
+    font-size: 24px;
+    color: @navhovercolor;
+    border-bottom: 4px solid @navhovercolor;
+}
+.more{
+    width: @navwidth - @cnt-tit-width;
+    height: @cnt-tit-height;
+    line-height: @cnt-tit-height;
+    float: left;
+    text-align: right;
+    border-bottom: 4px solid #c3c3c3;
+    a{
+        text-decoration: none;
+        color: @navhovercolor;
+        font-size: 16px;
+        &:hover{
+            color: @navhovercolor;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+    }
+}
+
+//首页资讯
+.dtnews{
+    width: @navwidth;
+    margin: 40px auto 60px;    
+    .newsdiv{
+        margin-top: 40px;
+        margin-right: 20px;
+        width: 386px;
+        float: left;
+        img{
+            width: 386px;
+            height: 290px;
+        }
+        .b1{
+            border-top: 4px solid #05559a;
+        }
+        .b2{
+            border-top: 4px solid #e99d45;
+        }
+        .b3{
+            border-top: 4px solid #08babe;
+        }
+    }  
+    .n3{
+        margin-right: 0;
+    }  
+    .box{
+        overflow: hidden;
+        position: relative;
+        padding-top: 10px;
+        margin-bottom: 10px;
+        .box-content{
+            width: 100%;
+            height: 20%;
+            color: #fff;
+            background: rgba(0,0,0,.6);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .post{
+            margin: 6px 10px 10px;
+            font-size: 16px;
+            display: inline-block;
+        }
+    }
+    .news-intro-a{
+        color: #000;
+        &:hover{
+            color: red;
+        }
+    }
+}
+
+// 中间banner
+.bnr{
+    width: @navwidth;
+    margin: 0 auto 40px;
+}
+
+// 首页活动
+.dt-acti-bg{
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    background: #eee;    
+}
+.dt-acti{
+    width: @navwidth;
+    margin: 0 auto;
+    .acti-video{
+        margin-top: 30px;
+        float: left;
+    }
+    .actidiv{
+        width: 395px;
+        height: 120px;
+        margin-top: 30px;
+        margin-left: 20px;
+        float: left;
+        .acti-cnt{
+            width: 235px;
+            float: left;
+            .acti-tit{
+                margin-left: 20px; 
+                font-size: 15px;
+                color: #333;               
+            }
+            .acti-time,.acti-posi{
+                margin-left: 20px;
+                color: #666;
+            }
+            .acti-time{
+                font-size: 13px;
+                margin-top: 25px;   
+                margin-bottom: -1px;             
+            }
+        }
+    }
+    .acti-img{
+        width: 160px;
+        height: 120px;
+        float: left;
+        position: relative;        
+        .acti-status{
+            width: 80px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            color: @navhovercolor;
+            background: rgba(255,255,255,.8);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+// 首页项目
+.proj{
+    width: @navwidth;
+    margin: 40px auto 0;
+    .swiper-container {
+        width: 100%;
+        height: 420px;
+        padding: 20px 0;
+    }  
+    .swiper-button-prev{
+        position: relative;
+        top: -220px;
+        left: -50px;
+        width: 50px;
+        height: 60px;
+        float: left;
+        background-size: 50px 60px;
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23efefef'%2F%3E%3C%2Fsvg%3E");
+        &:hover{
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23e70009'%2F%3E%3C%2Fsvg%3E");
+            
+        }
+    }
+    .swiper-button-next{
+        position: relative;
+        top: -220px;
+        left: 50px;
+        width: 50px;
+        height: 60px;
+        float: right;
+        background-size: 50px 60px;
+        background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23efefef'%2F%3E%3C%2Fsvg%3E");
+        &:hover{
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23e70009'%2F%3E%3C%2Fsvg%3E");
+        }
+    }
+}
+
+// ie8下swiper箭头样式
+.arrow-left,.arrow-right{
+    position: relative;
+    width: 34px;
+    height: 63px;
+    z-index: 20;
+}
+.arrow-left{
+    top: -240px;
+    left: -32px;
+    float: left;
+    background:url("../images/travker/next_left01.png") no-repeat;
+    &:hover{
+        background-image: url("../images/travker/next_left02.png");
+    }
+}
+.arrow-right{
+    top: -244px;
+    left: 16px;
+    float: right;
+    background:url("../images/travker/next_right01.png") no-repeat;    
+    &:hover{
+        background-image: url("../images/travker/next_right02.png");
+    }
+}
+
+// 首页基地
+@baseimg-wid: 280px;
+.dt-base{
+    width: @navwidth;
+    margin: 0 auto 5px;
+    .baseimgdiv{
+        width: @navwidth;
+        padding: 30px 0;
+        float: left;
+    }
+    .baseimg{
+        position: relative;
+        width: @baseimg-wid;
+        height: @baseimg-wid;
+        margin: 10px;
+        float: left;
+        overflow: hidden;
+        .city{
+            position: relative;
+            top: 0;
+            left: 0;
+            transition: .5s cubic-bezier(.68, -.55, .27, 1.55);            
+        }
+        .hexagon{
+            position: absolute;
+            bottom: -20px;
+            right: 0;
+        }
+        .city-name{
+            position: absolute;
+            bottom: 15px;
+            right: 3px;
+            width: 115px;
+            height: 65px;
+            line-height: 32.5px; 
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            b{
+                font-size: 24px;
+                font-weight: 400;
+            }
+        }
+        .before {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: .3;
+            transition: .5s cubic-bezier(0.47, 0, 0.745, 0.715);
+        }
+        &:hover .before {
+            opacity: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .titleft{
+        width: 40%;
+        font-size: 1.6rem;
+    }
+    .more{
+        width: 60%;
+        a{
+            font-size: 1.6rem;
+        }
+    }
+    .dtnews{
+        width: 90%;        
+        .newsdiv{
+            width: 100%;
+            margin-right: 0;
+        }
+        .box{
+            width: 100%;
+            margin: 0 auto;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .newstit{
+            text-align: center; 
+        }
+    }
+    .bnr{
+        width: 100%;
+        img{
+            width: 80%;
+            margin-left: 10%;
+        }
+    }
+    .dt-acti{
+        width: 90%;
+        .acti-video, .actidiv{
+            width: 100%;
+            height: auto;
+            padding: 0 11%;
+        }
+        .actidiv{
+            margin: 20px 0 0 0;
+        }
+        .acti-img{
+            margin-bottom: 20px;
+        }
+    }
+    .proj{
+        width: 90%;
+        .swiper-container{
+            width: 85%;
+        }
+        .swiper-button-prev{
+            left: -20px;
+        }
+        .swiper-button-next{
+            left: 15px;
+        }
+    }
+    .dt-base{
+        width: 90%;
+        .baseimgdiv{
+            width: 100%;
+        }
+    }
+    .loading{
+        width: 90%;
+    }
+
+    .footbg{
+        padding: 0 0 40px; 
+    }
+    .footer{
+        width: 90%;
+        height: auto;
+        .footleft, .footright{
+            margin-top: 30px;
+        }
+        .footleft{
+            width: 100%;
+            .frilink,.links{
+                width: 100%;
+            }
+        }
+        .footright{
+            width: 100%;
+            .qr{
+                width: 100%;
+                margin: 0;
+                text-align: center;
+            }
+            .contact{
+                width: 100%;
+                text-align: center;
+            }
+            .wannajoin{
+                margin: 10px auto 30px;
+            }
+        }
+    }
+}

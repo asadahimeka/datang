@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>服务</title>
+    <link rel="shortcut icon" href="./images/travker/favico.png" type="image/x-icon">
+    <link rel="stylesheet" href="./utils/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/service.css">
+    <script src="./utils/jquery-3.2.1.min.js"></script>
+    <script src="http://api.map.baidu.com/getscript?v=2.0&ak=UGuPOUtC04vrGrMns0G1ol4xXNVXmlM5"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="nav">
+            <a href="index.html"><img src="./images/index/u30.jpg" alt="" class="logo"></a>
+            <div class="navmenu"><a href="index.html">首页</a></div>
+            <div class="navmenu red"><a href="service.html">服务</a></div>
+            <div class="navmenu"><a href="project.html">项目</a></div>
+            <div class="navmenu"><a href="index.html#base">基地</a></div>
+            <div class="navmenu"><a href="news.html">资讯</a></div>
+            <div class="navmenu"><a href="acti.html">活动</a></div>
+            <div class="navmenu"><a href="aboutus.html">我们</a></div>
+            <div class="join red">
+                <img src="./images/travker/head_img.png" alt="" class="joinimg">
+                <a href="joinus.html">我要入驻</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 服务切换菜单 -->
+    <div class="srvtabmenu">
+        <div class="srvtab srvontab">369云服务</div>
+        <div class="srvtab">369云平台</div>
+        <div class="srvtab">创业服务</div>
+        <div class="srvtab">人才服务</div>
+        <div class="srvtab">投融资服务</div>
+    </div>
+
+    <!-- 云服务部分 -->
+    <div class="srv-cnt">
+        <img src="./images/service/iaas_banner.jpg" alt="" width="100%">
+        <div class="iaas-intro-cnt clearfix">
+            <div class="iaas-intro">
+                <img src="./images/service/lass_img01.png" alt="">
+                <div class="intro-advntg">一流的硬件资源</div>
+                <div class="intro-hover ih1">
+                    <b>计算资源</b>
+                    <p>单台采用Intel Xeon E5-2690 v3高端处理器，为云主机提供快速的计算能力</p>
+                    <b>网络资源</b>
+                    <p>采用高端交换机，为平台提供2T的网络背板宽带和单链路40G的出口宽带，可抵御超大流量的网络攻击。</p>
+                    <div class="knowmore">
+                        <a href="http://iaas.369cloud.com/">了解详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="iaas-intro">
+                <img src="./images/service/lass_img02.png" alt="">
+                <div class="intro-advntg">虚拟私有网络</div>
+                <div class="intro-hover ih2">
+                    <p>用户可以在平台上自由定义自己的网络架构，像物理IDC机房一样，设计自有网络、应用自有路由器，双层防火墙分别对云主机和租户进行防护。</p>
+                    <div class="knowmore">
+                        <a href="http://iaas.369cloud.com/">了解详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="iaas-intro">
+                <img src="./images/service/lass_img03.png" alt="">
+                <div class="intro-advntg">秒级计费</div>
+                <div class="intro-hover ih2">
+                    <p>369Cloud平台上的所有服务都是采用按秒计费，除公网IP外的所有服务暂停后不再计费，用户可以有效的扩容、回收资源，合理的为用户节省成本</p>
+                    <div class="knowmore">
+                        <a href="http://iaas.369cloud.com/">了解详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="iaas-intro">
+                <img src="./images/service/lass_img04.png" alt="">
+                <div class="intro-advntg">数据安全</div>
+                <div class="intro-hover ih1">
+                    <b>网络数据</b>
+                    <p>平台采用VXLAN对不同租户的网络实现二层隔离，双层防火墙分别对云主机和租户进行防护，内网数据云主机用户可以通过VPN通道进行访问。</p>
+                    <b>存储数据</b>
+                    <p>自定义故障域，按不同的故障域存储多份副本数据，跨数据中心灾备。</p>
+                    <div class="knowmore">
+                        <a href="http://iaas.369cloud.com/">了解详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="iaas-intro">
+                <img src="./images/service/lass_img05.png" alt="">
+                <div class="intro-advntg">多种磁盘存储方式</div>
+                <div class="intro-hover ih1">
+                    <b>云硬盘</b>
+                    <p>平台为云主机提供基于SSD固态盘的高IOPS快速云硬盘和基于SAS盘的容量型云盘。</p>
+                    <b>云盘</b>
+                    <p>平台通过Swift、S3接口的方式提供对象存储的云盘服务，通过369Cloud存储团队二次开发，云盘具备文件夹及目录层级功能，方便用户存储大容量数据及常用文件。</p>
+                    <div class="knowmore">
+                        <a href="http://iaas.369cloud.com/">了解详情</a>
+                    </div>
+                </div>
+            </div>
+            <div class="iaas-intro">
+                <img src="./images/service/lass_img06.png" alt="">
+                <div class="intro-advntg">控制台界面友好</div>
+                <div class="intro-hover ih2">
+                    <p>前台和后台调用采用cache加速技术，使各API功能模块对后端的调用速度更快，直观的仪表盘界面让用户更直观的了解资源使用情况 ，各功能模块在界面直观体现，没有复杂的依赖关系，用户根据自己需求很直观在界面上完成各项功能创建。</p>
+                    <div class="knowmore">
+                        <a href="http://iaas.369cloud.com/">了解详情</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 云平台部分 -->
+    <div class="srv-cnt">
+        <div class="topic">
+            <div class="topic-left">APP研发平台</div>
+            <div class="topic-more"></div>
+        </div>
+        <div class="topic-intro clearfix">
+            <p class="p-top">369Cloud基于Hybrid开发模式，使得HTML技术真正具有了作为移动开发平台核心技术的能力，通过采用原生技术进行封装，弥补了HTML 技术的缺陷。Hybrid模式把原生功能封装成组件，以HTML为纽带，通过可视化、可配置化操作，实现从应用创建、自定义认证、组件选择、模板配置、跨
+                平台编译的一系列开发流程，组合成与原生应用相媲美的移动应用，大大缩短开发周期，节约开发成本，颠覆开发周期冗长的传统模式。
+            </p>
+            <div class="pfi-div clearfix">
+                <div class="platform-intro">
+                    <img src="./images/service/u497.png" alt="">
+                    <p>跨平台移动应用开发引擎，在线生成iOS和Android两个平台的APP。功能模块覆盖了电话、短信、拍照、录音、音视频播放、位置信息、传感器、二维码扫描、第三方支付等应用开发常用的场景。369cloud对核心的API接口进行了封装，方便开发者调用。</p>
+                </div>
+                <div class="platform-intro">
+                    <img src="./images/service/u499.png" alt="">
+                    <p>多种类原生组件类别封装，通过JavaScript快速调用组件接口，给予应用快速拼装开发。官方组件拥有高自定义能力，并满足开发者上传自有组件使用。</p>
+                </div>
+                <div class="platform-intro">
+                    <img src="./images/service/u501.png" alt="">
+                    <p>跨平台开发环境，混合式开发使用HTML5、CSS3和JavaScript前端技术开发App，轻松完成高体验效果应用的开发、调试、跟踪和模拟。</p>
+                </div>
+                <div class="platform-intro">
+                    <img src="./images/service/u503.png" alt="">
+                    <p>集成众多类型App界面模板，帮助开发者快速搭建App界面。并通过多种模板组合完成App整体界面的框架结构。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="topic">
+            <div class="topic-left">APP后端服务</div>
+            <div class="topic-more"></div>
+        </div>
+        <div class="topic-intro clearfix">
+            <p class="p-top">369Cloud自动将开发者已创建的应用与应用开放的API连接，快速集成，为移动开发者提供数据服务、在线编码、在线测试、定时任务、邮件服务、消息推送、即时通讯、统计分析、文件存储等功能。</p>
+            <div class="besrv-div clearfix">
+                <div class="be-srv">
+                    <b class="beno">01</b>
+                    <b class="betit">数据服务</b>
+                    <p>可视化的云端数据表设计，支持多达10种数据类型，简单、自由地根据业务需求完成数据库配置，轻松实现云与端的数据交互。</p>
+                </div>
+                <div class="be-srv">
+                    <b class="beno">02</b>
+                    <b class="betit">数据统计服务</b>
+                    <p>实时查看当前应用用户数据，用户行为等等，为业务分析提供数据。用户通过开放的API集成至自己的后台系统。</p>
+                </div>
+                <div class="be-srv">
+                    <b class="beno">03</b>
+                    <b class="betit">消息推送服务</b>
+                    <p>稳定高效，集成自有推送系统，灵活的推送配置，提供精准用户推送服务。可根据用户的兴趣定期推给用户，帮助开发者高效率地发掘有价值的信息。</p>
+                </div>
+                <div class="be-srv">
+                    <b class="beno">04</b>
+                    <b class="betit">云存储服务</b>
+                    <p>数据对象以 JSON 格式随存随取，数据容量无限扩展；开放的 REST API，支持数据增删改查操作，对图片、音频、视频等二进制文件，提供了弹性存储空间及管理方式。</p>
+                </div>
+                <div class="be-srv">
+                    <b class="beno">05</b>
+                    <b class="betit">业务逻辑服务</b>
+                    <p>除了现有数据 API 之外，你还可以使用 JavaScript 等多种语言编写私有的业务逻辑，部署到云端，以满足业务场景。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="topic">
+            <div class="topic-left">众包服务</div>
+            <div class="topic-more"></div>
+        </div>
+        <div class="topic-intro clearfix">
+            <p class="p-top">369Cloud众包平台以大唐网络自主研发的快速创建移动应用云平台为核心技术基础，在全国聚集众多开发者，开发者通过众包平台承接合适的项目，获得收益，让开发者利用空闲时间，在不影响正常工作的同时，自由安排完成项目开发。在解决开发者收入的同时，为广大企业、项目方、创业团队解决项目开发周期
+                长，开发成本高等问题，项目主可以同时集结大批量的开发者快速进行项目开发，缩短开发周期，快速实现项目上线。
+            </p>
+            <div class="crowdsourcing"><img src="./images/service/u587.png" alt=""></div>
+        </div>
+    </div>
+
+    <!-- 创业服务部分 -->
+    <div class="srv-cnt">
+            <div class="loading">Loading<div class="load7"><div class="loader"></div></div></div>
+        <div class="csrv clearfix"></div>
+    </div>
+
+    <!-- 人才服务部分 -->
+    <div class="srv-cnt">
+        <div class="topic">
+            <div class="topic-left">人才服务</div>
+            <div class="topic-more"></div>
+        </div>
+        <div class="topic-intro clearfix talent-srv">
+            <p>北京三六九云智汇科技有限公司，是专业的移动互联中高端人才服务提供商 ，是大唐网络的控股企业 ，是大唐网络369生态的重要组成部分。我们主要为应届本科毕业生提供职业规划、企业实习、岗前实训、项目实战等实践通道，同时为大唐体系内的企业、大量互联网企业、转型升级的传统企业定制快速上手的移动互联专业人才，真正实现人才培养与企业需求的无缝对接。</p>
+            <div class="yzh"><img src="./images/service/u705.png" alt=""></div>
+            <p><b>优势一：</b>实训占比大。研发真实项目培养能力与经验，吸引本科生源，尤其是具备一定学习主动性，但缺少获取真实项目经验的优质生源；</p>
+            <p><b>优势二：</b>学后即用式教学。以逐步实现大型真实案例代替教学过程中诸多零散小练习，做到学后即用，培养学员项目实战能力；</p>
+            <p><b>优势三：</b>代码智能分析。分析引擎内置代码规范，从初始状态培养学员优良的代码习惯；分析引擎内置代码规范案例最优设计方案与实现方案，提高实训中教师辅导效率；</p>
+            <p><b>优势四：</b>透明化就业。通过369云学院平台，积累学习过程数据，用人单位通过平台筛选学生，解决招聘中信息不对称；</p>
+            <p><b>优势五：</b>369生态体系。369云平台对创业项目、对传统产业转型升级的有力支撑将是369云学院线上教学应用平台的基础；遍布全国各区域中心城市的369云工厂将带来更多的实习实训就业机会、地方院校及渠道资源的对接等；有机会借助369云基金的支持更上一层楼。</p>
+            <p>（了解369云智汇请点击：<a href="http://www.369wisdom.com/369cloud">www.369wisdom.com/369cloud</a>）</p>
+            <p>青岛实训基地：山东省青岛市市南区银川西路青岛国际动漫产业园c座203</p>
+            <p>课程咨询热线：176-6022-7811</p>
+            <div id="bdmap"></div>
+        </div>
+    </div>
+
+    <!-- 投融资服务部分 -->
+    <div class="srv-cnt">
+        <div class="topic">
+            <div class="topic-left">投融资服务</div>
+            <div class="topic-more"></div>
+        </div>
+        <div class="topic-intro clearfix investment-srv">
+            <p class="inv-tit"><b>大唐网络投融资服务面向产业互联网和民生互联网，专注于投资对大唐网络资源型移动互联网产业生态建设有利的项目</b></p>
+            <p class="inv-item"><b>重点投资方向：</b>互联网+金融、教育、智能制造、医疗、物流、零售、体育、电商、交通、养老等。 融资服务 　　1.融资指导：针对企业融资进行整体策划和指导。包括：商业计划书编制、股权结构设计、融资策略制定、融资谈判指导、融资协议风险提示，后续融资路径建议。
+                　　2.创投对接：为创业项目对接369云基金及大唐网络合作创投机构。 　　3.资源对接：大唐网络旗下教育、金融、养老等大数据项目资源对接，政府及国企资源对接。 　　4.项目路演：为项目安排创业路演，扩大项目影响力，对接创投资本。</p>
+            <p class="inv-item"><b>投行业务： 　　</b>1.股权融资：大唐网络依靠自有资金和旗下369云基金与数十家签约天使、VC基金合作，对入孵企业进行定向投资。同时，为企业提供商业计划书撰写、项目路演、资本运作规划等咨询服务。 　　2.债权融资：与金融机构开展紧密合作，根据初创中小企业的特点，定制债权融资产品，帮助企业解决资金紧张难题，助力企业成长。
+                　　3.资本通道：大唐网络与华融证券等券商战略合作伙伴协力，共同建设创新企业资本通道，形成从新三板到IPO完整的操作体系，助力企业快速进入资本市场，实现企业估值爆发性增长。
+            </p>
+        </div>
+    </div>
+
+    <div class="back">
+        <a href="http://iaas.369cloud.com/" class="cloud369">369云平台</a>
+        <div class="bktop">返回顶部</div>
+    </div>
+
+    <div class="footbg">
+        <div class="footer">
+            <div class="footleft">
+                <div class="frilink">友情链接</div>
+                <div class="links">
+                    <a href="http://www.datanggroup.cn/">大唐电信集团</a>
+                    <a href="http://www.datang.com/">大唐电信</a>
+                    <a href="http://www.369cloud.com/devservce/index.html">369云平台</a>
+                    <a href="">369云工厂</a>
+                    <a href="http://www.365ime.com/">天天艾米</a>
+                    <a href="http://www.ttantu.cn/">天天安途</a>
+                    <a href="http://www.cmeg2016.com/">天天电竞</a>
+                    <a href="http://ilao99.com/">中康行健</a>
+                    <a href="https://www.tangchaogouwu.com/">唐超科技</a>
+                </div>
+            </div>
+
+            <div class="footright ">
+                <div class="qr">
+                    <img src="./images/travker/erweima.png" alt="">
+                    <p><img src="./images/travker/weixin.png" alt="">微信号:datang_net</p>
+                </div>
+                <div class="contact">
+                    <div class="wannajoin">
+                        <a href="joinus.html">我要入驻</a>
+                    </div>
+                    <p><img src="./images/travker/tle.png" alt="">前台总机：010-83421999</p>
+                    <p><img src="./images/travker/add.png" alt="">地址：北京市海淀区北太平庄路18号城建大厦C座3层</p>
+                    <p>
+                        <span>大唐网络有限公司</span>
+                        <span>保留所有权利</span>
+                        <span>京ICP备1105848号-14</span>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/myPlugin.js"></script>
+    <script src="./js/service.js"></script>
+</body>
+
+</html>

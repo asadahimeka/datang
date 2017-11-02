@@ -1,0 +1,248 @@
+@import "global.less";
+
+// 切换菜单
+@ontabcolor: #f54336;
+@tabcolor: #7b7b7c;
+.srvtabmenu{
+    width: 800px;
+    height: 135px;
+    margin: 0 auto;
+    .srvtab{
+        width: 125px;
+        height: 70px;
+        line-height: 70px;
+        margin: 30px 15px 0;
+        font-size: 24px;
+        text-align: center;
+        float: left;
+        color: @tabcolor;
+        cursor: pointer;
+    }
+    .srvontab{
+        color: @ontabcolor;
+        .border-bottom(@ontabcolor);
+        transition: .5s ease-in-out;
+    }
+}
+
+@iaas-intro-width :380px;
+@iaas-intro-height :345px;
+.iaas-intro-cnt{
+    width: @iaas-intro-width*3 + 60;
+    margin: 20px auto;
+    .iaas-intro{
+        position: relative;
+        width: @iaas-intro-width;
+        height: @iaas-intro-height;
+        margin: 10px;
+        float: left;
+        overflow: hidden;
+        .intro-advntg{
+            height: @iaas-intro-height - 285;
+            line-height: @iaas-intro-height - 285;
+            text-align: center;
+            font-size: 18px;
+            background: #eee;
+            color: #333;
+        }
+        .intro-hover{
+            position: absolute;
+            bottom: 0;
+            right: 380px;
+            width: 100%;
+            height: 100%;
+            padding: 20px 10px;
+            font-size: 14px;
+            color: #fff;
+            overflow: hidden;            
+            .knowmore{
+                position: absolute;
+                bottom: 20px;
+                left: 100px;
+                width: 160px;
+                height: 40px;
+                line-height: 40px;                
+                text-align: center;
+                background: #fff;
+                border-radius: 30px;                
+                a{
+                    color: red;
+                    text-decoration: none;
+                }
+            }
+            transition: .4s ease-in-out;             
+        }
+        .ih1{
+            p{
+                line-height: 22px;
+            }
+            b{
+                display: inline-block;
+                margin-top: 15px;
+                margin-bottom: 10px;
+                font-size: 22px;
+                font-weight: 400;
+            }
+        }
+        .ih2 p{
+            margin-top: 40px;
+            line-height: 22px;
+        }
+
+        &:before{
+            content: "";
+            width: 100%;
+            height: 100%; 
+            background: #000;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            opacity: 0;
+            transition: .4s ease-in-out;            
+        }
+        &:hover:before{
+            opacity: .7;
+        }
+    }
+}
+
+.topic-intro{
+    width: @navwidth;
+    margin: 0 auto;
+    padding: 50px 20px;
+    .p-top{
+        font-size: 18px;
+        line-height: 38px;
+        text-indent: 2em;        
+    }
+}
+
+.pfi-div{
+    width: 1080px;
+    margin: 0 auto;
+    .platform-intro{
+        width: 240px;
+        margin: 10px 15px;
+        float: left;
+        p{
+            margin-top: 10px;
+            font-size: 16px;
+            color: #7b7b7c;
+        }
+    }
+}
+
+.besrv-div{
+    width: @navwidth;
+    margin: 0 auto;
+    .be-srv{
+        width: 520px;
+        margin: 0 35px;
+        padding: 30px 20px;
+        float: left;
+        background: #fff url(../images/travker/dice_img05.png) no-repeat 240px 100px; 
+        overflow: hidden;
+        p{
+            font-size: 16px;
+            color: #0b0205;
+            line-height: 24px;
+        }
+    }
+    .betit{
+        font-size: 24px;
+        color: #0b0205;
+    }
+    .beno{
+        width: 100px;
+        line-height: 90px;
+        font-weight: 100;
+        padding-top: 17px;
+        float: left;
+        font-size: 72px;
+        color: #c3c3c3;
+    }
+}
+
+.crowdsourcing{
+    width: 385px;
+    height: 216px;
+    margin: 40px auto 200px;
+}
+
+.csrv{
+    width: @navwidth + 20;
+    margin: 0 auto 40px;
+}
+.carveout-srv{
+    position: relative;
+    width: 285px;
+    height: 285px;
+    margin: 10px;
+    float: left;
+    img{
+        width: 285px;
+        height: 285px;
+    }
+    .cs-content{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        padding: 65px 40px 0;
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+        b{
+            font-size: 24px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }               
+    }
+    &:before{
+        content: "";
+        width: 100%;
+        height: 100%; 
+        background: #000;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        opacity: .1;           
+    }
+}
+
+.talent-srv{
+    p,b{
+        font-size: 18px;
+        line-height: 35px;
+        margin: 10px 0;
+    }
+    .yzh{
+        width: 200px;
+        margin: 20px auto 30px;    
+    }
+}
+
+.investment-srv{
+    font-family: "宋体";
+    p,b{
+        font-size: 18px;
+        line-height: 35px;
+        margin: 10px 0;
+    }
+    .inv-tit{
+        margin-top: 0;
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    .inv-item{
+        text-indent: 2em;
+    }
+}
+
+// 百度地图
+#bdmap{
+    width:700px;
+    height:400px;
+    margin-top: 30px;
+}
