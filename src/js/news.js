@@ -22,7 +22,7 @@ function appendNews(typeCodes, index) {
             data = data.sort((a, b) => b.publishTime - a.publishTime);
             //处理一下数据，把同月的资讯放在一起
             var newsarr = [[data[0]]];
-            for (var i = ii = 1; i < count; i++) {
+            for (var i = 1,ii = 1; i < count; i++) {
                 var pmno = getmouth(newsarr[ii - 1][0].publishTime);
                 var mouth_no = getmouth(data[i].publishTime);
                 if (mouth_no == pmno) {
